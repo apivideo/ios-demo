@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-ios-demo/Pods-ios-demo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/HaishinKit/HaishinKit.framework
+${BUILT_PRODUCTS_DIR}/Logboard/Logboard.framework
+${BUILT_PRODUCTS_DIR}/sdkApiVideo/sdkApiVideo.framework

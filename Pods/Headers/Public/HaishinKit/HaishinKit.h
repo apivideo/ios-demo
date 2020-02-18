@@ -1,0 +1,1 @@
+../../../HaishinKit/Platforms/iOS/HaishinKit.h

@@ -1,0 +1,6 @@
+module sdkApiVideo {
+  umbrella header "sdkApiVideo-umbrella.h"
+
+  export *
+  module * { export * }
+}

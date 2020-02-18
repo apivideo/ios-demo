@@ -1,0 +1,6 @@
+module HaishinKit {
+  umbrella header "HaishinKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

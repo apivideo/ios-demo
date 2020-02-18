@@ -7,14 +7,38 @@
 //
 
 import UIKit
+import sdkApiVideo
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    let authClient = Client()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        authClient.createSandbox(key: "USE_YOUR_SANDBOX_API_KEY"){ (created, reponse) in
+            if(reponse != nil && reponse?.statusCode != "200"){
+                print("error authentification => \((reponse?.statusCode)!): \((reponse?.message)!)")
+            }else{
+                if created{
+                    print("authentified")
+                }
+            }
+        }
+        
+        let session = AVAudioSession.sharedInstance()
+        do {
+            try session.setPreferredSampleRate(44_100)
+            if #available(iOS 10.0, *) {
+                try session.setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker, .allowBluetooth])
+            } else {
+                session.perform(NSSelectorFromString("setCategory:withOptions:error:"), with: AVAudioSession.Category.playAndRecord, with: [AVAudioSession.CategoryOptions.allowBluetooth])
+                try? session.setMode(.default)
+            }
+            try session.setActive(true)
+        } catch {
+        }
         return true
     }
 

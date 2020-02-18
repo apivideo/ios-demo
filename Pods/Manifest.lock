@@ -1,0 +1,25 @@
+PODS:
+  - HaishinKit (1.0.4):
+    - Logboard (~> 2.1.2)
+  - Logboard (2.1.2)
+  - sdkApiVideo (0.1.0):
+    - HaishinKit (~> 1.0.4)
+    - Logboard (~> 2.1.2)
+
+DEPENDENCIES:
+  - sdkApiVideo
+
+SPEC REPOS:
+  trunk:
+    - HaishinKit
+    - Logboard
+    - sdkApiVideo
+
+SPEC CHECKSUMS:
+  HaishinKit: b911679d362aac54afd835a154b17b3b6aaa9519
+  Logboard: e3342fa111e26268bb89577e6a40a0660a423ddd
+  sdkApiVideo: 9d6c159e4f638899bd2ca4ba42f070f24cdf58a2
+
+PODFILE CHECKSUM: e7c7655f705f987a35906d38eb7a5d96de63d66a
+
+COCOAPODS: 1.8.4
