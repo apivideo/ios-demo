@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VSD-Du-iaK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VSD-Du-iaK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +10,7 @@
         <!--Create Video-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="UploadVideoViewController" customModule="sdkApiVideoExempleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="UploadVideoViewController" customModule="ios_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,7 +236,7 @@
         <!--List of Videos-->
         <scene sceneID="Tmz-Hy-zTW">
             <objects>
-                <tableViewController id="z75-1S-TKn" customClass="VideosTableViewController" customModule="sdkApiVideoExempleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="z75-1S-TKn" customClass="VideosTableViewController" customModule="ios_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="j2N-yC-Gy2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -284,7 +284,7 @@
         <!--Detail Video View Controller-->
         <scene sceneID="mjU-g8-BZz">
             <objects>
-                <viewController id="uRg-Pc-4sE" customClass="DetailVideoViewController" customModule="sdkApiVideoExempleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uRg-Pc-4sE" customClass="DetailVideoViewController" customModule="ios_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uAW-hS-Nr3" userLabel="ContainerView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -685,7 +685,7 @@
                                                     <constraint firstAttribute="height" constant="140" id="X7S-du-bxH"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoChunkCell" rowHeight="92" id="W5e-jC-l0m" customClass="VideoChunkTableViewCell" customModule="sdkApiVideoExempleApp" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoChunkCell" rowHeight="92" id="W5e-jC-l0m" customClass="VideoChunkTableViewCell" customModule="ios_demo" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="414" height="92"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W5e-jC-l0m" id="Ulz-w7-6AN">
@@ -772,10 +772,10 @@
                                                             </constraints>
                                                         </tableViewCellContentView>
                                                         <connections>
-                                                            <outlet property="chunkNumber" destination="VZC-mG-iTV" id="cdx-kG-7VU"/>
-                                                            <outlet property="fromBytesLabel" destination="gHm-cO-rR8" id="g7a-Lz-4is"/>
-                                                            <outlet property="minimumBytesLabel" destination="SxN-xh-iXr" id="Kdl-wP-gIr"/>
-                                                            <outlet property="totalBytesLabel" destination="daz-Gc-ZYc" id="ZZr-cV-LAb"/>
+                                                            <outlet property="chunkNumber" destination="VZC-mG-iTV" id="ouY-hL-Eza"/>
+                                                            <outlet property="fromBytesLabel" destination="gHm-cO-rR8" id="ZjL-Yo-BXt"/>
+                                                            <outlet property="minimumBytesLabel" destination="SxN-xh-iXr" id="8f5-cA-roG"/>
+                                                            <outlet property="totalBytesLabel" destination="daz-Gc-ZYc" id="L3f-Eq-mLJ"/>
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>
@@ -879,7 +879,7 @@
         <!--Edit Video View Controller-->
         <scene sceneID="0bH-eW-0c3">
             <objects>
-                <viewController id="lmi-yw-kvB" customClass="EditVideoViewController" customModule="sdkApiVideoExempleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lmi-yw-kvB" customClass="EditVideoViewController" customModule="ios_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YqH-ip-Q3o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1060,7 +1060,7 @@
         <!--Live Streams View Controller-->
         <scene sceneID="4zt-wh-6af">
             <objects>
-                <viewController id="Sdf-Ge-S9f" customClass="LiveStreamsViewController" customModule="sdkApiVideoExempleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Sdf-Ge-S9f" customClass="LiveStreamsViewController" customModule="ios_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yjk-Ea-6if">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1069,7 +1069,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="655"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LiveStreamCell" rowHeight="80" id="2yH-BE-GRU" customClass="LiveStreamTableViewCell" customModule="sdkApiVideoExempleApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LiveStreamCell" rowHeight="80" id="2yH-BE-GRU" customClass="LiveStreamTableViewCell" customModule="ios_demo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2yH-BE-GRU" id="BiB-Uy-GS2">
@@ -1101,8 +1101,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="liveStreamIdLabel" destination="N8G-m7-d25" id="DUf-5F-YRq"/>
-                                            <outlet property="nbCellLabel" destination="4E3-RM-GgZ" id="XQV-wX-D6s"/>
+                                            <outlet property="liveStreamIdLabel" destination="N8G-m7-d25" id="WBH-yg-QVj"/>
+                                            <outlet property="nbCellLabel" destination="4E3-RM-GgZ" id="uKu-SD-meC"/>
                                             <segue destination="ty8-DO-vpE" kind="show" identifier="detailLiveStreamSegue" id="Ny1-UR-Buh"/>
                                         </connections>
                                     </tableViewCell>
@@ -1139,7 +1139,7 @@
         <!--Detail Live Stream View Controller-->
         <scene sceneID="waX-OY-qP9">
             <objects>
-                <viewController id="ty8-DO-vpE" customClass="DetailLiveStreamViewController" customModule="sdkApiVideoExempleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ty8-DO-vpE" customClass="DetailLiveStreamViewController" customModule="ios_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WUW-uJ-zGq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1347,7 +1347,7 @@
         <!--Edit Thumbnail Live Stream View Controller-->
         <scene sceneID="IcW-oK-grD">
             <objects>
-                <viewController id="0wf-mT-upH" customClass="EditThumbnailLiveStreamViewController" customModule="sdkApiVideoExempleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0wf-mT-upH" customClass="EditThumbnailLiveStreamViewController" customModule="ios_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DdO-Vi-JyB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1404,7 +1404,7 @@
         <!--Edit Live View Controller-->
         <scene sceneID="XmI-w8-Bob">
             <objects>
-                <viewController id="tSV-Zs-9Dt" customClass="EditLiveViewController" customModule="sdkApiVideoExempleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tSV-Zs-9Dt" customClass="EditLiveViewController" customModule="ios_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="obg-9S-RSo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1510,7 +1510,7 @@
         <!--Live Stream Control View Controller-->
         <scene sceneID="00z-oh-U65">
             <objects>
-                <viewController id="oG9-O0-2ve" customClass="LiveStreamControlViewController" customModule="sdkApiVideoExempleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oG9-O0-2ve" customClass="LiveStreamControlViewController" customModule="ios_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0M4-ft-8Ua">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1679,7 +1679,7 @@
         <!--Players-->
         <scene sceneID="hVK-fS-GSd">
             <objects>
-                <viewController id="VSX-PC-MMN" customClass="PlayersViewController" customModule="sdkApiVideoExempleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VSX-PC-MMN" customClass="PlayersViewController" customModule="ios_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="56M-f0-Fud">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1688,7 +1688,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="655"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayerCell" rowHeight="124" id="KhG-0s-5zo" customClass="PlayerTableViewCell" customModule="sdkApiVideoExempleApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayerCell" rowHeight="124" id="KhG-0s-5zo" customClass="PlayerTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="414" height="124"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KhG-0s-5zo" id="xTm-tI-2eI">
@@ -1727,9 +1727,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="logoPlayerImageView" destination="6rB-IH-mcM" id="BtY-9z-myY"/>
-                                            <outlet property="nbCellLabel" destination="7g9-U4-VpZ" id="xwC-Mq-iY6"/>
-                                            <outlet property="playerIdLabel" destination="JQj-z8-HGX" id="aKP-zn-4cY"/>
+                                            <outlet property="logoPlayerImageView" destination="6rB-IH-mcM" id="xjz-3U-MIN"/>
+                                            <outlet property="nbCellLabel" destination="7g9-U4-VpZ" id="JCZ-4G-o5Q"/>
+                                            <outlet property="playerIdLabel" destination="JQj-z8-HGX" id="kDy-1A-Ozi"/>
                                             <segue destination="P1r-f3-51P" kind="show" identifier="detailPlayerSegue" id="SpU-im-YFI"/>
                                         </connections>
                                     </tableViewCell>
@@ -1804,7 +1804,7 @@
         <!--Create Player View Controller-->
         <scene sceneID="9IR-Q8-N1E">
             <objects>
-                <viewController id="bhL-Bn-gFu" customClass="CreatePlayerViewController" customModule="sdkApiVideoExempleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bhL-Bn-gFu" customClass="CreatePlayerViewController" customModule="ios_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5f8-FL-g0Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1833,7 +1833,7 @@
         <!--Detail Player View Controller-->
         <scene sceneID="tMC-7Z-xSn">
             <objects>
-                <viewController id="P1r-f3-51P" customClass="DetailPlayerViewController" customModule="sdkApiVideoExempleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="P1r-f3-51P" customClass="DetailPlayerViewController" customModule="ios_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QJH-Md-7gw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2369,7 +2369,7 @@
         <!--Edit Player View Controller-->
         <scene sceneID="8PD-7u-c6f">
             <objects>
-                <viewController id="thh-aY-Btg" customClass="EditPlayerViewController" customModule="sdkApiVideoExempleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="thh-aY-Btg" customClass="EditPlayerViewController" customModule="ios_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Euf-d8-Srx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
